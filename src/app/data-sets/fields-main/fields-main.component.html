@@ -1,0 +1,47 @@
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-outline btn-sm" [routerLink]="['/topic-data-lib',{ outlets:{'left':['newDS']}}]">建立資料集</button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="card" style="margin-top:0">
+      <div class="card-block">
+        <table class="table table-compact">
+          <thead>
+          <tr>
+            <th class="left">資料集</th>
+            <th class="right">加入</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td class="left"><i class="fas fa-table"></i> &nbsp; <a href="">TBDMATABLE</a></td>
+            <td class="right">
+              <div class="toggle-switch">
+                <input type="checkbox" checked><label></label>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="left"><i class="fa fa-database"></i> &nbsp; <a href="">SQL-1</a></td>
+            <td class="right">
+              <div class="toggle-switch">
+                <input type="checkbox" ><label></label>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td class="left"><i class="fa fa-file"></i> &nbsp; <a href="">AA.csv</a></td>
+            <td class="right">
+              <div class="toggle-switch">
+                <input type="checkbox" ><label></label>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

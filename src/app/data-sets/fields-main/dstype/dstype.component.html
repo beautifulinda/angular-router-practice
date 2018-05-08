@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-sm" [routerLink]="['/topic-data-lib',{ outlets:{'left':['newDS', 'sqlDS']}}]">SQL</button>
+    <button class="btn btn-sm" [routerLink]="['/topic-data-lib',{ outlets:{'left':['newDS', 'tableDS']}}]">Table</button>
+    <button class="btn btn-sm" [routerLink]="['/topic-data-lib',{ outlets:{'left':['newDS', 'fileDS']}}]">CSV/Excel</button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <router-outlet></router-outlet>
+  </div>
+</div>

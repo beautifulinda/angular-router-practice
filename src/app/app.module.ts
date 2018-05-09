@@ -13,6 +13,8 @@ import { DSTypeComponent } from './data-sets/fields-main/dstype/dstype.component
 import { DSFileComponent } from './data-sets/fields-main/dstype/dsfile/dsfile.component';
 import { DSSqlComponent } from './data-sets/fields-main/dstype/dssql/dssql.component';
 import { DSTableComponent } from './data-sets/fields-main/dstype/dstable/dstable.component';
+import { FormsModule } from '@angular/forms';
+import { AddFieldsComponent } from './data-fields/add-fields/add-fields.component';
 
 
 @NgModule({
@@ -27,10 +29,12 @@ import { DSTableComponent } from './data-sets/fields-main/dstype/dstable/dstable
     DSFileComponent,
     DSSqlComponent,
     DSTableComponent,
+    AddFieldsComponent,
     // ClarityModule,
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule
   ],
   providers: [],

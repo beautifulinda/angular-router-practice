@@ -1,0 +1,92 @@
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-sm" [routerLink]="['/topic-data-lib']">確認加入</button>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h3>關聯</h3>
+    <hr>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-3">
+    <h5>TBDMATABLE</h5>
+    <select multiple>
+      <option>DATASOURCEID</option>
+      <option>SCHEMAID</option>
+      <option>TABLEID</option>
+      <option>ALIAS</option>
+    </select>
+  </div>
+  <div class="col-xs-3">
+    <h5>SQL-1</h5>
+    <select multiple>
+      <option>DATASOURCEID</option>
+      <option>SCHEMAID</option>
+      <option>TABLEID</option>
+      <option>ALIAS</option>
+    </select>
+  </div>
+  <div class="col-xs-6">
+    <h5>JOIN COLUMN</h5>
+    <select multiple>
+      <option>DATASOURCEID=DATASOURCEID</option>
+      <option>SCHEMAID=SCHEMAID</option>
+    </select>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h3>請選擇顯示的欄位</h3>
+    <hr>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <div class="form-group">
+      <div class="radio-inline" style="margin-right: 5px">
+        <input type="radio" name="gridRadios1" id="checkrads_11">
+        <label for="checkrads_11">INNER JOIN </label>
+      </div>
+      <div class="radio-inline" style="margin-right: 5px">
+        <input type="radio" name="gridRadios1" id="checkrads_12" checked>
+        <label for="checkrads_12">LEFT JOIN</label>
+      </div>
+      <div class="radio-inline" style="margin-right: 5px">
+        <input type="radio" name="gridRadios1" id="checkrads_13">
+        <label for="checkrads_13">RIGHT JOIN</label>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <table class="table table-compact">
+      <tr>
+        <th>
+          顯示
+        </th>
+        <th class="left">
+          欄位
+        </th>
+      </tr>
+      <tr>
+        <td><input type="checkbox"></td>
+        <td class="left">DATASOURCEID</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox"></td>
+        <td class="left">SCHEMAID</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox"></td>
+        <td class="left">TABLEID</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" checked></td>
+        <td class="left">XXX</td>
+      </tr>
+    </table>
+  </div>
+</div>

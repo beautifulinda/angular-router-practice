@@ -1,47 +1,79 @@
 <div class="row">
   <div class="col-xs-12">
-    <button class="btn btn-sm">增加客製欄位</button>
+    <button class="btn btn-sm">增加自定義欄位</button>
     <button class="btn btn-sm">篩選條件</button>
     <button class="btn btn-sm">預覽</button>
   </div>
 </div>
 <div class="row">
   <div class="col-xs-12">
-    <table class="table ">
+    <h4><i class="fa fa-angle-down"></i> 顯示的欄位</h4>
+    <button class="btn btn-sm">隱藏</button>
+    <table class="table table-compact" style="margin-top: 0">
       <thead>
       <tr>
+        <th class="left">選取</th>
+        <th class="left">資料集</th>
         <th class="left">欄位代碼</th>
         <th class="left">欄位別名</th>
-        <th class="left">顯示</th>
+
       </tr>
       </thead>
       <tbody>
       <tr>
+        <td class="left"><input type="checkbox"></td>
+        <td class="left">TBDMATABLE</td>
         <td class="left">Frankenstein</td>
         <td class="left">Fire</td>
-        <td class="left">
-          <div class="toggle-switch">
-            <input type="checkbox"><label>隱藏</label>
-          </div>
-        </td>
       </tr>
       <tr>
+        <td class="left"><input type="checkbox"></td>
+        <td class="left">TBDMATABLE</td>
         <td class="left">Dracula</td>
         <td class="left">Garlic</td>
-        <td class="left">
-          <div class="toggle-switch">
-            <input type="checkbox" checked><label>顯示</label>
-          </div>
-        </td>
       </tr>
       <tr>
+        <td class="left"><input type="checkbox"></td>
+        <td class="left">TBDMATABLE</td>
         <td class="left">Wolfman</td>
         <td class="left">Squirrels</td>
-        <td class="left">
-          <div class="toggle-switch">
-            <input type="checkbox"><label>隱藏</label>
-          </div>
-        </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h4><i class="fa fa-angle-down"></i>  隱藏的欄位</h4>
+    <button class="btn btn-sm">顯示</button>
+    <table class="table table-compact" style="margin-top: 0">
+      <thead>
+      <tr>
+        <th class="left">選取</th>
+        <th class="left">資料集</th>
+        <th class="left">欄位代碼</th>
+        <th class="left">欄位別名</th>
+
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td class="left"><input type="checkbox"></td>
+        <td class="left">TBDMATABLE</td>
+        <td class="left">DATASOURCEID</td>
+        <td class="left">資料源</td>
+      </tr>
+      <tr>
+        <td class="left"><input type="checkbox"></td>
+        <td class="left">TBDMATABLE</td>
+        <td class="left">SCHEMAID</td>
+        <td class="left">綱要</td>
+      </tr>
+      <tr>
+        <td class="left"><input type="checkbox"></td>
+        <td class="left">TBDMATABLE</td>
+        <td class="left">TABLEID</td>
+        <td class="left">表格代碼</td>
       </tr>
       </tbody>
     </table>

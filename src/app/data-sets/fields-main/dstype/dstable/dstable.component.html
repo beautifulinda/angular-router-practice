@@ -45,8 +45,12 @@
         </table>
       </div>
       <div class="card-footer">
-        <button class="btn btn-sm btn-link" [routerLink]="['/topic-data-lib',{ outlets:{'left':['field']}}]">建立</button>
-        <button class="btn btn-sm btn-link" [routerLink]="['/topic-data-lib',{ outlets:{'left':['field']}}]">取消</button>
+        <button class="btn btn-sm btn-link" [routerLink]="['/topic-data-lib',{ outlets:{'left':['entry','field']}}]">
+          建立
+        </button>
+        <button class="btn btn-sm btn-link" [routerLink]="['/topic-data-lib',{ outlets:{'left':['entry','field']}}]">
+          取消
+        </button>
       </div>
     </div>
   </div>

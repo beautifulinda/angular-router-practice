@@ -1,13 +1,15 @@
 <div class="row">
   <ul id="demoTabs" class="nav" role="tablist">
     <li role="presentation" class="nav-item">
-      <button id="tab1" class="btn btn-link nav-link" [routerLink]="['/topic-data-lib',{ outlets:{'left':['field']}}]"
+      <button id="tab1" class="btn btn-link nav-link"
+              [routerLink]="['/topic-data-lib',{ outlets:{'left':['entry','field']}}]"
               routerLinkActive="active" [routerLinkActiveOptions]="{exact:false}"
               type="button">資料集
       </button>
     </li>
     <li role="presentation" class="nav-item">
-      <button id="tab2" class="btn btn-link nav-link" [routerLink]="['/topic-data-lib',{ outlets:{'left':['topic']}}]"
+      <button id="tab2" class="btn btn-link nav-link"
+              [routerLink]="['/topic-data-lib',{ outlets:{'left':['entry','topic']}}]"
               routerLinkActive="active"
               type="button">主題
       </button>

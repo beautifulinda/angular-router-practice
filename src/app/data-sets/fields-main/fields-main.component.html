@@ -1,6 +1,8 @@
 <div class="row">
   <div class="col-xs-12">
-    <button class="btn btn-outline btn-sm" [routerLink]="['/topic-data-lib',{ outlets:{'left':['newDS']}}]">建立資料集</button>
+    <button class="btn btn-outline btn-sm" [routerLink]="['/topic-data-lib',{ outlets:{'left':['entry','newDS']}}]">
+      建立資料集
+    </button>
   </div>
 </div>
 <div class="row">
@@ -26,8 +28,8 @@
           <tr>
             <td class="left"><i class="fa fa-database"></i> &nbsp; <a href="">SQL-1</a></td>
             <td class="right">
-              <div class="toggle-switch">
-                <input type="checkbox" ><label></label>
+              <div class="toggle-switch" (click)="addSqlDs()">
+                <input type="checkbox" [checked]="addSqlDsToggle"><label></label>
               </div>
             </td>
           </tr>
@@ -35,7 +37,7 @@
             <td class="left"><i class="fa fa-file"></i> &nbsp; <a href="">AA.csv</a></td>
             <td class="right">
               <div class="toggle-switch">
-                <input type="checkbox" ><label></label>
+                <input type="checkbox"><label></label>
               </div>
             </td>
           </tr>
